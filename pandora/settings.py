@@ -5,6 +5,10 @@ import os
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+ALLOWED_HOSTS = ['*']
+
+
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
