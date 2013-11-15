@@ -1,1 +1,1 @@
-web: gunicorn pandora/wsgi.wsgi
+web: gunicorn pandora.wsgi
