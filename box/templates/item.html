@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block pagetitle %}
+	{{ thing.title }}
+{% endblock pagetitle %}
+
+{% block title %}
+	{{ thing.title }}
+{% endblock title %}
+
+{% block content %}
+	<p><a href="/">Назад</a></p>
+
+	<p>Сделан из материала <em>{{ thing.things_type|lower }}, {{ thing.things_type.get_kind_display|lower }}</em></p>
+{% endblock content %}
